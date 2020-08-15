@@ -1,0 +1,16 @@
+[
+    {
+        "image": [],
+        "rating": 7,
+        "hidden": false,
+        "_id": "5f37717012b7851bf1a468a4",
+        "title": "Hampi the heritage place",
+        "description": "Hampi is located in Karnataka India",
+        "latitude": 15.335,
+        "longitude": 76.46,
+        "visitedDate": "2020-08-15T05:21:28.001Z",
+        "createdAt": "2020-08-15T05:24:00.637Z",
+        "updatedAt": "2020-08-15T05:24:00.637Z",
+        "__v": 0
+    }
+]
