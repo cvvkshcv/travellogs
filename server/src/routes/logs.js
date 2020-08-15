@@ -5,7 +5,8 @@ const LogsModel = require('../model/logsEntry');
 
 router.get('/', async(req, res, next) => {
     try {
-        const entries = await LogsModel.find({ _id : req.query.id});
+        const query = (req.query.id) ? { _id: req.query.id } : {};
+        const entries = await LogsModel.find(query, {hidden: 0});
         res.json(entries);
     } catch (error) {
         next(error);
@@ -16,7 +17,10 @@ router.post('/', async(req, res, next) => {
     try {
         const logEntry = new LogsModel(req.body);
         const newEntry = await logEntry.save();
-        res.json(newEntry);
+        res.json({
+            message: 'Added',
+            success: true
+        });
     } catch (error) {
         if (error.name == 'ValidationError') {
             res.status(422);

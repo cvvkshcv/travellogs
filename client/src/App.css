@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.pin-icon {
+    transform: translate(-50%, -100%);
+}
+.my-map-popup {
+    width: 300px;
+    max-width: 300px;
+}
+.my-map-popup h2 {
+    margin: 10px 0 0;
+    color: #434141;
+}
+.my-map-popup p {
+    margin: 10px 0 5px;
+    color: #434141;
+}
+.my-map-popup h2 {
+
+}
