@@ -92,6 +92,7 @@ const App = () => {
                 dynamicPosition={true}
                 latitude={createEntry.latitude}
                 longitude={createEntry.longitude}
+                onClose={() => setCreateEntry(null)}
                 className="popup"
               >
                 <LogForm lat={createEntry.latitude} lng={createEntry.longitude} onCreate={onCreate} />
